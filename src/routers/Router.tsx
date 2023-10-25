@@ -7,11 +7,11 @@ import { Contact } from '../pages/Contact'
 export const Router = () => {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/contact' element={<Contact/>}/>
-        <Route element={<NotFound />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   )
