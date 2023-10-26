@@ -8,7 +8,7 @@ export const Contact=()=>{
         <>
         <Header />
         <div className="main-contents">
-            <img src="./logo512.png" alt="プロフィール画像" className="profile-img"/>
+            <img src="./logo192.png" alt="プロフィール画像" className="profile-img"/>
             <label htmlFor="email"><h1>メールアドレス</h1></label>
             <br/>
             <p id="email" className="contact-content">sample@gmail.com</p>

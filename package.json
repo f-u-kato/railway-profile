@@ -23,13 +23,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "rm": "rm -rf docs",
     "mv": "mv build docs",
     "git": "git add . && git commit -m '{$npm_config_name}' && git push origin main",
-    "deploy": "npm run build && npm run mv && npm run git --name={$npm_config_name}"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +48,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://roido-name.github.io/railway-profile/"
-
+  "homepage": "https://roido-name.github.io/railway-profile/",
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
 }
