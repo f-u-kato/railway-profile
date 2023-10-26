@@ -5,7 +5,6 @@ import { NotFound } from '../pages/NotFound'
 import { Contact } from '../pages/Contact'
 
 export const Router = () => {
-  alert(process.env.PUBLIC_URL)
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
